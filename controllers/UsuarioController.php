@@ -1,22 +1,24 @@
 <?php
 
-include_once '../services/UsuarioService.php';
+include_once(__DIR__ . '../services/UsuarioService.php');
+class UsuarioController
+{
 
-class UsuarioController {
+    private $usuarioService;
 
-    private $user_service;
-
-    public function __construct(UserService $user_service) {
-        $this->user_service = $user_service;
+    public function __construct(UsuarioService $usuarioService)
+    {
+        $this->usuarioService = $usuarioService;
     }
 
-    public function createUser(User $user) {
-        $new_user_id = $this->user_service->createUser($user);
+    public function createUser(Usuario $usuario)
+    {
+        $IdDoUsuario = $this->usuarioService->createUser($usuario);
 
-        if ($new_user_id) {
-            return $new_user_id;
-            return false;
-            echo "Novo usuário criado com o ID: " . $new_user_id;
+        if ($IdDoUsuario) {
+            return $IdDoUsuario;
+           // return false;
+            //echo "Novo usuário criado com o ID: " . $IdDoUsuario;
         } else {
             echo "Erro ao criar o usuário.";
         }
