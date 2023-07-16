@@ -12,14 +12,14 @@ class User_repository {
         $this->connection = $connection;
     }
 
-    public function createUser(User $user) {
+    public function createUser(Usuario $user) {
         $query = "INSERT INTO usuario (email, password, tipo)
                   VALUES (:email, :password, :tipo)";
         
         $stmt = $this->connection->prepare($query);
         $stmt->bindValue(':email', $user->getEmail());
         $stmt->bindValue(':password', $user->getPassword());
-        $stmt->bindValue(':tipo', $user->getRole());
+        $stmt->bindValue(':tipo', $user->getTipo());
 
         if ($stmt->execute()) {
             return $this->connection->lastInsertId();
