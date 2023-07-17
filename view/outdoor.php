@@ -15,20 +15,20 @@
 
     <!-- Vendor CSS Files -->
 
-    <link href="../content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../content/bootstrap/css/bootstrap-icons.css" rel="stylesheet">
-    <link href="../content/bootstrap/css/swiper-bundle.min.css" rel="stylesheet">
-    <link href="../content/bootstrap/css/animate.min.css" rel="stylesheet" type="text/css" />
-    <link href="../content/css/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="t/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="t/bootstrap/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="t/bootstrap/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="t/bootstrap/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="t/css/estilo.css" rel="stylesheet" type="text/css" />
     <!-- Template Main CSS File -->
-    <link href="../content/bootstrap/css/style.css" rel="stylesheet">
-    <link href="../scripts/custom/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="t/bootstrap/css/style.css" rel="stylesheet">
+    <link href="s/custom/estilo.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
     <?php
-    include_once(__DIR__ .'/../header2.php');
+    include_once(__DIR__ .'/2.php');
     ?>
     <main id="main">
 
@@ -67,7 +67,7 @@
                     <div class="col-md-4">
                         <div class="card-box-a card-shadow">
                             <div class="img-box-a">
-                                <img src="../content/images/18.jpg" alt="" class="img-a img-fluid">
+                                <img src="t/images/18.jpg" alt="" class="img-a img-fluid">
                             </div>
                             <div class="card-overlay">
                                 <div class="card-overlay-a-content">
@@ -106,7 +106,7 @@
                     <div class="col-md-4">
                         <div class="card-box-a card-shadow">
                             <div class="img-box-a">
-                                <img src="../content/images/15.jpg" alt="" class="img-a img-fluid">
+                                <img src="t/images/15.jpg" alt="" class="img-a img-fluid">
                             </div>
                             <div class="card-overlay">
                                 <div class="card-overlay-a-content">
@@ -145,7 +145,7 @@
                     <div class="col-md-4">
                         <div class="card-box-a card-shadow">
                             <div class="img-box-a">
-                                <img src="../content/images/16.jpg" alt="" class="img-a img-fluid">
+                                <img src="t/images/16.jpg" alt="" class="img-a img-fluid">
                             </div>
                             <div class="card-overlay">
                                 <div class="card-overlay-a-content">
@@ -184,7 +184,7 @@
                     <div class="col-md-4">
                         <div class="card-box-a card-shadow">
                             <div class="img-box-a">
-                                <img src="../content/images/5.jpg" alt="" class="img-a img-fluid">
+                                <img src="t/images/5.jpg" alt="" class="img-a img-fluid">
                             </div>
                             <div class="card-overlay">
                                 <div class="card-overlay-a-content">
@@ -223,7 +223,7 @@
                     <div class="col-md-4">
                         <div class="card-box-a card-shadow">
                             <div class="img-box-a">
-                                <img src="../content/images/4.jpg" alt="" class="img-a img-fluid">
+                                <img src="t/images/4.jpg" alt="" class="img-a img-fluid">
                             </div>
                             <div class="card-overlay">
                                 <div class="card-overlay-a-content">
@@ -264,7 +264,7 @@
                     <div class="col-md-4">
                         <div class="card-box-a card-shadow">
                             <div class="img-box-a">
-                                <img src="../content/images/cuca.jpg" alt="" class="img-a img-fluid">
+                                <img src="t/images/cuca.jpg" alt="" class="img-a img-fluid">
                             </div>
                             <div class="card-overlay">
                                 <div class="card-overlay-a-content">
@@ -334,12 +334,12 @@
     </main><!-- End #main -->
 
     <?php
-    include_once("../footer.php");
+    include_once(".php");
     ?>
     </section><!-- End Latest Properties Section -->
-    <script src="../scripts/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="../scripts/bootstrap/swiper-bundle.min.js" type="text/javascript"></script>
-    <script src="../scripts/bootstrap/main.js" type="text/javascript"></script>
+    <script src="s/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="s/bootstrap/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="s/bootstrap/main.js" type="text/javascript"></script>
 
 </body>
 

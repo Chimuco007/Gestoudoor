@@ -37,8 +37,8 @@
                         <td><input type="text" name="email" value="" class="form-control" required></td>
                     </tr>
                     <tr>
-                        <td>userName</td>
-                        <td><input type="text" name="username" value="" class="form-control" required></td>
+                        <td>UsuarioName</td>
+                        <td><input type="text" name="Usuarioname" value="" class="form-control" required></td>
                     </tr>
                     <tr>
                         <td>password</td>
@@ -57,7 +57,7 @@
             </form>
         </div>
         <?php
-        require_once '../controllers/GestorController.php';
+        require_once 'llers/GestorController.php';
         $controller = new GestorController();
         $controller->saveGestor();
         ?>

@@ -1,4 +1,6 @@
 <?php
-include_once("header.php");
-include_once("footer.php");
+include_once ("controllers/UsuarioController.php");
 
+$usuario = new UsuarioController();
+
+$usuario->menu();

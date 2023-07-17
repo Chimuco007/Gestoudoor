@@ -15,20 +15,20 @@
 
         <!-- Vendor CSS Files -->
 
-        <link href="../content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../content/bootstrap/css/bootstrap-icons.css" rel="stylesheet">
-        <link href="../content/bootstrap/css/swiper-bundle.min.css" rel="stylesheet">
-        <link href="../content/bootstrap/css/animate.min.css" rel="stylesheet" type="text/css"/>
-        <link href="../content/css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="t/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="t/bootstrap/css/bootstrap-icons.css" rel="stylesheet">
+        <link href="t/bootstrap/css/swiper-bundle.min.css" rel="stylesheet">
+        <link href="t/bootstrap/css/animate.min.css" rel="stylesheet" type="text/css"/>
+        <link href="t/css/estilo.css" rel="stylesheet" type="text/css"/>
         <!-- Template Main CSS File -->
-        <link href="../content/bootstrap/css/style.css" rel="stylesheet">
-        <link href="../scripts/custom/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="t/bootstrap/css/style.css" rel="stylesheet">
+        <link href="s/custom/estilo.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
 
         <?php
-        include_once("../header2.php");
+        include_once("2.php");
         ?>
          
         <main id="main">
@@ -66,7 +66,7 @@
                         <div class="col-md-12 section-t8 position-relative">
                             <div class="row">
                                 <div class="col-md-6 col-lg-5">
-                                    <img src="../content/images/sobre.jpg" alt="" class="img-fluid">
+                                    <img src="t/images/sobre.jpg" alt="" class="img-fluid">
                                 </div>
                                 <div class="col-lg-2  d-none d-lg-block position-relative">
                                     <div class="title-vertical d-flex justify-content-start">
@@ -102,12 +102,12 @@
         <div class="propery-carousel-pagination carousel-pagination"></div>
     </div>
     <?php
-    include_once("../footer.php");
+    include_once(".php");
     ?>
 </section><!-- End Latest Properties Section -->  
-<script src="../scripts/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
-<script src="../scripts/bootstrap/swiper-bundle.min.js" type="text/javascript"></script>
-<script src="../scripts/bootstrap/main.js" type="text/javascript"></script>
+<script src="s/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="s/bootstrap/swiper-bundle.min.js" type="text/javascript"></script>
+<script src="s/bootstrap/main.js" type="text/javascript"></script>
 
 </body>
 

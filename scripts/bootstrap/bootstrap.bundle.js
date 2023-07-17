@@ -1263,7 +1263,7 @@
 
         // If it's a touch-enabled device, mouseenter/leave are fired as
         // part of the mouse compatibility events on first tap - the carousel
-        // would stop cycling until user tapped out of it;
+        // would stop cycling until Usuario tapped out of it;
         // here, we listen for touchend, explicitly pause the carousel
         // (as if it's the second time we tap on it, mouseenter compat event
         // is NOT fired) and after a timeout (to allow for mouse compatibility
@@ -1846,7 +1846,7 @@
   var round = Math.round;
 
   function getUAString() {
-    var uaData = navigator.userAgentData;
+    var uaData = navigator.UsuarioAgentData;
 
     if (uaData != null && uaData.brands && Array.isArray(uaData.brands)) {
       return uaData.brands.map(function (item) {
@@ -1854,7 +1854,7 @@
       }).join(' ');
     }
 
-    return navigator.userAgent;
+    return navigator.UsuarioAgent;
   }
 
   function isLayoutViewport() {
@@ -5724,7 +5724,7 @@
         this._process(targetElement(entry));
       };
       const parentScrollTop = (this._rootElement || document.documentElement).scrollTop;
-      const userScrollsDown = parentScrollTop >= this._previousScrollData.parentScrollTop;
+      const UsuarioScrollsDown = parentScrollTop >= this._previousScrollData.parentScrollTop;
       this._previousScrollData.parentScrollTop = parentScrollTop;
       for (const entry of entries) {
         if (!entry.isIntersecting) {
@@ -5734,7 +5734,7 @@
         }
         const entryIsLowerThanPrevious = entry.target.offsetTop >= this._previousScrollData.visibleEntryTop;
         // if we are scrolling down, pick the bigger offsetTop
-        if (userScrollsDown && entryIsLowerThanPrevious) {
+        if (UsuarioScrollsDown && entryIsLowerThanPrevious) {
           activate(entry);
           // if parent isn't scrolled, let's keep the first visible item, breaking the iteration
           if (!parentScrollTop) {
@@ -5744,7 +5744,7 @@
         }
 
         // if we are scrolling up, pick the smallest offsetTop
-        if (!userScrollsDown && !entryIsLowerThanPrevious) {
+        if (!UsuarioScrollsDown && !entryIsLowerThanPrevious) {
           activate(entry);
         }
       }

@@ -5,14 +5,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../content/css/cadastro.css" rel="stylesheet" type="text/css"/>
+        <link href="t/css/cadastro.css" rel="stylesheet" type="text/css"/>
         <title>Formulário</title>
     </head>
 
     <body>
         <div class="container">
             <div class="form-image">
-                <img src="../content/images/undraw_shopping_re_3wst.svg"  alt="">
+                <img src="t/images/undraw_shopping_re_3wst.svg"  alt="">
             </div>
             <div class="form">
                 <br>

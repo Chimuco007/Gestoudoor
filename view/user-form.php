@@ -49,8 +49,8 @@
                         <td><input type="text" name="telemovel" value="" class="form-control" required></td>
                     </tr>
                     <tr>
-                        <td>User Name</td>
-                        <td><input type="text" name="username" value="" class="form-control" required></td>
+                        <td>Usuario Name</td>
+                        <td><input type="text" name="Usuarioname" value="" class="form-control" required></td>
                     </tr>
 
                     <tr>
@@ -69,9 +69,9 @@
             </form>
         </div>
         <?php
-        require_once '../controllers/UsuarioController.php';
+        require_once 'llers/UsuarioController.php';
         $controller = new UsuarioController();
-        $controller->saveUser();
+        $controller->saveUsuario();
         ?>
     </body>
 

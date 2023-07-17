@@ -1,17 +1,22 @@
 <?php
 
-include_once (__DIR__.'../repositories/IuserRepository.php');
-include_once (__DIR__.'/../repositories/user_repository.php');
+include_once('repositories/Usuariorepository.php');
+include_once('services/IUsuarioService.php');
 
-class UsuarioService {
+class UsuarioService implements IUsuarioService {
 
-    private $user_repository;
+    private $usuarioRepository = NULL;
 
-    public function __construct(User_Repository $user_repository) {
-        $this->user_repository = $user_repository;
+    public function __construct() {
+        $this->usuarioRepository = new Usuariorepository();
     }
 
-    public function createUser(Usuario $usuario) {
-        return $this->user_repository->createUser($usuario);
+    public function createNewUsuario($email, $tipo, $senha) {
+        try {
+           $this->usuarioRepository->createUsuario($email, $tipo, $senha);
+            return true;
+        } catch (Exception $e) {
+            throw $e;
+        }
     }
 }

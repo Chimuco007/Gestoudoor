@@ -18,19 +18,19 @@ class Gestor {
     private $comuna_id;
     private $morada;
     private $phone;
-    private $username;
+    private $Usuarioname;
     private $password;
 
     //private $is_admin;
 
-    public function __construct($id_Gestor, $nomeCompleto, $email, $comuna_id, $morada, $phone, $username, $password) {
+    public function __construct($id_Gestor, $nomeCompleto, $email, $comuna_id, $morada, $phone, $Usuarioname, $password) {
         $this->id_Gestor = $id_Gestor;
         $this->nomeCompleto = $nomeCompleto;
         $this->email = $email;
         $this->comuna_id = $comuna_id;
         $this->morada = $morada;
         $this->phone = $phone;
-        $this->username = $username;
+        $this->Usuarioname = $Usuarioname;
         $this->password = $password;
     }
 
@@ -58,8 +58,8 @@ class Gestor {
         return $this->phone;
     }
 
-    public function getUsername() {
-        return $this->username;
+    public function getUsuarioname() {
+        return $this->Usuarioname;
     }
 
     public function getPassword() {
@@ -90,8 +90,8 @@ class Gestor {
         $this->phone = $phone;
     }
 
-    public function setUsername($username): void {
-        $this->username = $username;
+    public function setUsuarioname($Usuarioname): void {
+        $this->Usuarioname = $Usuarioname;
     }
 
     public function setPassword($password): void {

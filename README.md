@@ -42,7 +42,7 @@ o Nacionalidade
 o Morada
 o Endereço de email
 o Telemóvel
-o Username
+o Usuarioname
 o Password
 o Confirmação da Password
 Quando ocorre o registo de um novo utilizador na aplicação, um email têm de ser enviado 
@@ -74,7 +74,7 @@ o Endereço de Email
 o Provincia, Municipio, Comuna
 o Morada,
 o Telemovel 
-o Username
+o Usuarioname
 o Password
 o Confirmação da Password
 O dado de autenticação do gestor em causa deve ser enviado para o email deste. 
