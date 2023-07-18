@@ -3,18 +3,20 @@
 include_once('repositories/Usuariorepository.php');
 include_once('services/IUsuarioService.php');
 
-class UsuarioService implements IUsuarioService {
+class UsuarioService implements IUsuarioService
+{
 
     private $usuarioRepository = NULL;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->usuarioRepository = new Usuariorepository();
     }
 
-    public function createNewUsuario($email, $tipo, $senha) {
+    public function createNewUsuario($email, $tipo, $senha)
+    {
         try {
-           $this->usuarioRepository->createUsuario($email, $tipo, $senha);
-            return true;
+            return  $this->usuarioRepository->createUsuario($email, $tipo, $senha);
         } catch (Exception $e) {
             throw $e;
         }

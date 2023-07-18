@@ -22,7 +22,9 @@ class UsuarioRepository implements IUsuarioRepository
             $stmt->bindParam(":tipo", $tipo);
             $stmt->bindParam(":senha", $senha);
             $stmt->execute();
-           return $stmt->lastIndex();
+            
+            return $this->db->lastInsertId();
+
         } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
