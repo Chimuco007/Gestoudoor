@@ -1,6 +1,6 @@
 <?php
 
-interface IProvincia{
+interface INacionalidade{
 
     public function selectAll();
 }

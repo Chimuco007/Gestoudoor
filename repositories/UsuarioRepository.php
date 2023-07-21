@@ -22,12 +22,23 @@ class UsuarioRepository implements IUsuarioRepository
             $stmt->bindParam(":tipo", $tipo);
             $stmt->bindParam(":senha", $senha);
             $stmt->execute();
-            
-            return $this->db->lastInsertId();
 
+            return $this->db->lastInsertId();
         } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
         }
+    }
+
+    public function sistemaLogin($email)
+    {
+        
+            $stmt = $this->db->prepare("SELECT * FROM usuario WHERE email = :email");
+            $stmt->bindparam(':email', $email);
+            $stmt->execute();
+            $usuario = $stmt->fetch();
+            
+            return new Usuario($usuario['codUsuario'], $usuario['email'], $usuario['senha'],$usuario['tipo']);
+        
     }
 }

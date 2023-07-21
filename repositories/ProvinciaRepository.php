@@ -1,6 +1,7 @@
 <?php
 include_once 'Dbconfig/DbConnection.php';
 include_once "model/provincia.php";
+include_once "repositories/IProvincia.php";
 
 
 class ProvinciaRepository implements IProvincia
@@ -12,11 +13,16 @@ class ProvinciaRepository implements IProvincia
     {
         $this->db = DbConnection::getInstance();
     }
-    public function selectByIdProvincia($codProvincia)
+    public function selectAll()
     {
-        $stmt = $this->db->prepare("SELECT * FROM municipio WHERE FK_Provincia = :codProvincia ORDER BY nomeMunicipio");
-        $stmt->execute(['codProvincia' => $codProvincia]);
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
+        $provincias = array();
+        $stmt = $this->db->prepare("SELECT * FROM provincia");
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+
+        foreach ($result as $provincia) {
+            $provincias[] = new Provincia($provincia['codProvincia'], $provincia['nome']);
+        }
+        return $provincias;
     }
 }

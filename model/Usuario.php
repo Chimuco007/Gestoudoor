@@ -7,13 +7,14 @@ class Usuario {
     private $senha;
     private $tipo;
 
-    public function __construct($email, $tipo, $senha) {
+    public function __construct($id, $email, $senha, $tipo) {
+        $this->id = $id;
         $this->email = $email;
         $this->senha = $senha;
         $this->tipo = $tipo;
     }
 
-    public function getSenha() {
+        public function getSenha() {
         return $this->senha;
     }
 

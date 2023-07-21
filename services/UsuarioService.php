@@ -21,4 +21,15 @@ class UsuarioService implements IUsuarioService
             throw $e;
         }
     }
+
+    public function SistemaLogin($email)
+    {
+        try {
+            return  $this->usuarioRepository->sistemaLogin($email);
+        } catch (Exception $e) {
+            throw $e;
+        }
+    }
+
+   
 }
